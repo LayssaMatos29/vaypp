@@ -65,32 +65,36 @@
 
 <body _c_t_common="1" _c_t_j1="1">
 
-    <header>
-        <div class="px-3 py-2 text-bg-dark">
+    <header class="p-3 mb-3 border-bottom bg-dark mt-6">
 
-            <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-dark bg-dark fixed-top p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
 
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="index.html"
-                        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                        <h1 style="color:#6D69FF; font-weight:bold;" class="ms-5">vaypp</h1>
-                    </a>
-                    <a href="/"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <p class="display-6 ms-4 fw-bold" style="color: #6D69FF;">vaypp</p>
 
                     </a>
-
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-
+                    <ul class="nav  col-lg-auto my-2 justify-content-center my-md-0 text-small">
                         <li>
-                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle mt-2"
+                            <a href="#" class="nav-link text-white">
+
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Olá, Gabriel
+                                    </font>
+                                </font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle mt-1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://github.com/mdo.png" alt="mdo" width="35" height="35"
                                     class="rounded-circle">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link text-white mt-1">
+                            <a href="#" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     class="bi bi-bell-fill" viewBox="0 0 16 16">
                                     <path
@@ -100,7 +104,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link text-white mt-1">
+                            <a href="#" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     class="bi bi-question-circle-fill" viewBox="0 0 16 16">
                                     <path
@@ -109,89 +113,50 @@
                             </a>
                         </li>
                         <li>
-                            <nav class="navbar navbar-dark bg-dark">
-                                <div class="container-fluid">
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarToggleExternalContent"
-                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                        aria-label="Toggle navigation" style="background-color:#6D69FF">
-                                        <span class="navbar-toggler-icon" style="color:white;"></span>
-                                    </button>
+                            <button class="navbar-toggler mx-2 me-5" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasDarkNavbar" style="background-color: #6D69FF;"
+                                aria-controls="offcanvasDarkNavbar">
+                                <span class="navbar-toggler-icon" style="color: #fff;"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                                aria-labelledby="offcanvasDarkNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
                                 </div>
-                            </nav>
-                            <div class="collapse" id="navbarToggleExternalContent">
-                                <div class="bg-dark p-4 text-white">
-                                    <a href="" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-                                            <!-- 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
-                                                </path>
-                                            </svg> -->
-                                            <font style="vertical-align: inherit;">
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Lorem
+                                                Ipsum</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Lorem Ipsum</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Lorem Ipsum</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-hand-index-thumb-fill me-2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z">
+                                                    </path>
+                                                </svg>
                                                 <font style="vertical-align: inherit;">
-                                                    Lorem Ipsum
+                                                    <font style="vertical-align: inherit;">
+                                                        Explorar
+                                                    </font>
                                                 </font>
-                                            </font>
-                                        </div>
-                                    </a>
-                                    <a href="" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-                                            <!-- 
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="meuscursos.html"></a>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
-                                                </path>
-                                            </svg> -->
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">
-                                                    Lorem Ipsum
-                                                </font>
-                                            </font>
-                                        </div>
-                                    </a>
-                                    <a href="" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-                                            <!-- 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
-                                                </path>
-                                            </svg> -->
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">
-                                                    Lorem Ipsum
-                                                </font>
-                                            </font>
-                                        </div>
-                                    </a>
-
-                                    <a href="" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-
-                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
-                                                </path>
-                                            </svg> -->
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">
-                                                    Explorar
-                                                </font>
-                                            </font>
-                                        </div>
-                                    </a>
-
-                                    <a href="meuscursos.html" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-pencil-fill me-2" viewBox="0 0 16 16">
                                                 <path
                                                     d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
                                                 </path>
@@ -201,13 +166,11 @@
                                                     Meus cursos
                                                 </font>
                                             </font>
-                                        </div>
-                                    </a>
-
-                                    <a href="meusdados.html" style="text-decoration: none;" class="text-white">
-                                        <div class="fs-5 mb-3">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="meusdados.html"></a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
                                                 <path
                                                     d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
@@ -217,26 +180,64 @@
                                                     Meus dados
                                                 </font>
                                             </font>
-                                        </div>
-                                    </a>
-
-                                    <a href="login.html" style="text-decoration: none;">
-                                        <span class="text-muted">Sair</span>
-                                    </a>
-
+                                            </a>
+                                        </li>
+                                        <hr style="color:gray;">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#"></a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-box-arrow-in-right me-2"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                            </svg>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Sair
+                                                </font>
+                                            </font>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      Dropdown
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-menu-dark">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a>
+                                      </li>
+                                  </ul>
+                              </li> -->
+                                    </ul>
+                                    <!-- <form class="d-flex mt-3" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search"
+                                  aria-label="Search">
+                              <button class="btn btn-success" type="submit">Search</button>
+                          </form> -->
                                 </div>
-                            </div>
-                        </li>
                     </ul>
-                </div>
-            </div>
-        </div>
 
+                </div>
+        </div>
+        </nav>
+        </div>
+        </div>
+        </div>
+        </nav>
+
+        </div>
     </header>
     <main style="background-color: #000000;">
         <div class="album py-5" style="background-color: #000000;">
             <div class="container overflow-hidden text-center">
-                <div class="row gx-5 mb-3">
+                <div class="row gx-5 mb-3 mt-5">
                     <div class="col">
                         <a href="/" class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none ms-5">
                             <div
@@ -277,8 +278,8 @@
                             <h5 class="card-title text-white mb-3 fw-semibold">Documentos</h5>
                             <p class="card-text text-white fw-light">Natureza
                             </p>
-                            <div class="row">
-                                <div class="col-sm-4">
+                            <div class="row ">
+                                <div class="col-sm-4 mb-sm-3">
                                     <div class="card  bg-dark border-secondary">
                                         <div class="card-body text-white">
                                             <div class="form-check">
