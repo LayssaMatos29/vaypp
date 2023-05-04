@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Cadastrar Produtos (Concluido)</title>
+    <title>Relatórios de Vendas</title>
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
@@ -540,7 +540,7 @@
                     <button type="button" class="btn btn-sm mt-3 w-25 py-2 mx-3 my-3 text-white border-0"
                         style="background-color: #6D69FF;">LOREM IPSUM</button>
                 </div>
-                <div class="hstack gap-3 mt-5 mb-4">
+                <div class="hstack gap-3 mt-5 mb-5">
                     <div class="bg-dark">
                         <a href="/" class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none">
                             <div
@@ -548,7 +548,7 @@
                                 a
                             </div>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="h3 ms-1">Cadastrar produto</font>
+                                <font style="vertical-align: inherit;" class="h3 ms-1">Métricas dos produtos</font>
                             </font>
 
                         </a>
@@ -564,68 +564,467 @@
                                     d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                             </svg>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="h6 ms-1">Produtos - Cadastrar</font>
+                                <font style="vertical-align: inherit;" class="h6 ms-1"> Relatórios - Métricas dos
+                                    produtos</font>
                             </font>
 
                         </a></div>
-                    <div class="vr" style="color: gray;"></div>
-                    <div class="bg-dark"><a href="/"
-                            class="d-flex align-items-center mb-5 mb-lg-0  text-decoration-none"
-                            style="color: #FDC501 !important;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16" style="color: #FDC501;">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" style="color: #FDC501 !important;"
-                                    class="h6 ms-1">Meus
-                                    favoritos</font>
-                            </font>
 
-                        </a></div>
                 </div>
                 <div class=" rounded text-center mt-2 col-md-12 col-sm-12 mb-5">
                     <div class=" rounded text-center border rounded-0" style="border-color: #6D69FF !important;">
 
 
                         <div class="row ms-3 mt-4 me-3 mb-3">
-                            <div class="fs-2 mb-3 text-white text-start ms-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" style="color:gray;" width="35" height="35" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
-                  </svg>
-                                Cadastrar
-                              </div>
-                              <hr style="color: gray;" class="mx-3">
-                              <div class="mt-5 mb-5">
-                                <div class="fs-2 mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: #6D69FF !important;" width="100" height="100" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                      </svg>
-                                    Heading
-                                  </div>
-                                <h2 class="text-white mt-5 text-center">Infoproduto cadastrado!</h2>
-                                <h4 class="text-white text-center"><small>Para consultar os seus produtos acesse a área de “Meus produtos” dentro da aba “Produtos”</small></h4>
+                            <div class="fs-2 mb-3 text-start text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:gray;" width="30" height="30"
+                                    fill="currentColor" class="bi bi-graph-up-arrow text-start" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z">
+                                    </path>
+                                </svg>
+                                Métricas de venda
                             </div>
-            
+                            <hr style="color: gray;" class="mx-3">
+                            <div class="row g-2 mx-3">
+                                <div class="col-md">
+                                    <p class="card-text text-white fw-light mt-3 h5 text-start">Período
+                                    </p>
+                                    <div class="form-floating bg-dark">
+                                        <input type="email" class="form-control bg-dark border-secondary"
+                                            id="floatingInputGrid" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <p class="card-text text-white fw-light mt-3 h5 text-start">Produto
+                                    </p>
+                                    <div class="form-floating bg-dark">
+                                        <input type="email" class="form-control bg-dark border-secondary"
+                                            id="floatingInputGrid" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <p class="card-text text-white fw-light mt-3 h5 text-start">Plano
+                                    </p>
+                                    <div class="form-floating bg-dark">
+                                        <input type="email" class="form-control bg-dark border-secondary"
+                                            id="floatingInputGrid" placeholder="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="navbar navbar-light bg-dark mb-3">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand text-secondary">
+                                        ...
+                                    </a>
+                                    <form class="d-flex">
+                                        <div class="d-inline p-2 bg-dark text-white">
+                                            <button type="button" class="btn btn-primary px-4"
+                                                style="background-color: #6D69FF !important; border-color: #6D69FF !important;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                    </path>
+                                                </svg>
+                                                Buscar
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </nav>
+
+
+                            <!-- <div class="float-end mx-5">
+                                    <button type="button" class="btn btn-success px-4" style="background-color: #6D69FF!important;">
+                                        Continuar
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg>
+                                        
+                                      </button>
+                                </div> -->
+
+                            <hr style="color: gray;" class="mx-3">
+                            <div class="row text-start">
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color:#54A106;">0%</h5>
+                                            <p class="card-text">Taxa conversão geral</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color: #6D69FF;">0%</h5>
+                                            <p class="card-text">Porcentagem de vendas em cartão</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-start">
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color: #6D69FF;">0%</h5>
+                                            <p class="card-text">Porcentagem de vendas em boleto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color: #6D69FF;">0%</h5>
+                                            <p class="card-text">Porcentagem de vendas em pix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-start">
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color: #FF5555;">0%</h5>
+                                            <p class="card-text">Taxa de abandonos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card bg-dark text-white border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h2" style="color: #FF5555;">0%</h5>
+                                            <p class="card-text">Percentual de Cartão Cancelado</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
-                
+
 
                 </div>
+
+                <div class=" rounded text-center mt-2 col-md-12 col-sm-12 mb-5">
+                    <div class=" rounded text-center border rounded-0" style="border-color: #6D69FF !important;">
+                        <div class="fs-2 mb-3 text-start text-secondary mx-5 my-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color:gray;" width="30" height="30"
+                                fill="currentColor" class="bi bi-graph-up-arrow text-start" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z">
+                                </path>
+                            </svg>
+                            Métricas de pagamento com cartão
+                        </div>
+                        <hr style="color: gray;" class="mx-3">
+                        <div class="row g-2 mx-3">
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Período
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Produto
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Plano
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-light bg-dark mb-3">
+                            <div class="container-fluid">
+                                <a class="navbar-brand text-secondary">
+                                    ...
+                                </a>
+                                <form class="d-flex">
+                                    <div class="d-inline p-2 bg-dark text-white">
+                                        <button type="button" class="btn btn-primary px-4"
+                                            style="background-color: #6D69FF !important; border-color: #6D69FF !important;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                </path>
+                                            </svg>
+                                            Buscar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <hr style="color: gray;" class="mx-3">
+
+                        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                            <div class="col-6 m-5">
+                                <div class="d-flex flex-row bd-highlight mb-3 text-white gay-2">
+                                    <div class="d-inline p-2 bg-dark text-white h4 me-2">Percent. de vendas</div>
+                                    <div class="d-inline p-2 bg-dark text-white h4 ms-4">Quant. Parcelas</div>
+                                </div>
+
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                                <div class="progress mb-3 col-10 bg-secondary">
+                                    <div class="progress-bar bg-dark" style="background-color: #6D69FF !important;"
+                                        role=" progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">10%
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------ -->
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class=" rounded text-center mt-2 col-md-12 col-sm-12 mb-5">
+                    <div class=" rounded text-center border rounded-0" style="border-color: #6D69FF !important;">
+                        <div class="fs-2 mb-3 text-start text-secondary mx-5 my-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color:gray;" width="30" height="30"
+                                fill="currentColor" class="bi bi-graph-up-arrow text-start" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z">
+                                </path>
+                            </svg>
+                            Indicadores de vendas por tipo de pagamento
+                        </div>
+                        <hr style="color: gray;" class="mx-3">
+                        <div class="row g-2 mx-3">
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Período
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Produto
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Plano
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <p class="card-text text-white fw-light mt-3 h5 text-start">Status venda
+                                </p>
+                                <div class="form-floating bg-dark">
+                                    <input type="email" class="form-control bg-dark border-secondary"
+                                        id="floatingInputGrid" placeholder="" value="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <nav class="navbar navbar-light bg-dark mb-3">
+                            <div class="container-fluid">
+                                <a class="navbar-brand text-secondary">
+                                    ...
+                                </a>
+                                <form class="d-flex">
+                                    <div class="d-inline p-2 bg-dark text-white">
+                                        <button type="button" class="btn btn-primary px-4"
+                                            style="background-color: #6D69FF !important; border-color: #6D69FF !important;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                </path>
+                                            </svg>
+                                            Buscar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <hr style="color: gray;" class="mx-3">
+                        <div class="m-4">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card bg-dark text-white border-white rounded-0">
+                                        <div class="card-body border-white"
+                                            style="background-color: #6D69FF !important;">
+                                            <h5 class="card-title">Cartão</h5>
+                                            <p class="card-text">Vendas que foram feitas no cartão.</p>
+                                        </div>
+                                        <div class="card-body text-start border-white">
+                                            <div class="d-inline p-2 h6">Total de vendas no cartão
+                                            </div>
+                                            <div class="d-inline p-2 h3 ms-5" style="color: #6D69FF !important;">0</div>
+                                            <div class="progress mt-3 mb-2">
+                                                <div class="progress-bar bg-secondary" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="d-inline p-2 me-5">Porcentagem
+                                            </div>
+                                            <div class="d-inline p-2 ms-5">0,00 %</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card bg-dark text-white border-white rounded-0">
+                                        <div class="card-body border-white"
+                                            style="background-color: #6D69FF !important;">
+                                            <h5 class="card-title">PIX</h5>
+                                            <p class="card-text">Vendas que foram feitas no pix.</p>
+                                        </div>
+                                        <div class="card-body text-start border-white">
+                                            <div class="d-inline p-2 h6">Total de vendas no pix
+                                            </div>
+                                            <div class="d-inline p-2 h3 ms-5" style="color: #6D69FF !important;">0</div>
+                                            <div class="progress mt-3 mb-2">
+                                                <div class="progress-bar bg-secondary" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="d-inline p-2 me-5">Porcentagem
+                                            </div>
+                                            <div class="d-inline p-2 ms-5">0,00 %</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card bg-dark text-white border-white rounded-0 ">
+                                        <div class="card-body border-white"
+                                            style="background-color: #6D69FF !important;">
+                                            <h5 class="card-title">Boleto</h5>
+                                            <p class="card-text">Vendas que foram feitas no boleto.</p>
+                                        </div>
+                                        <div class="card-body text-start border-white">
+                                            <div class="d-inline p-2 h6">Total de vendas no boleto
+                                            </div>
+                                            <div class="d-inline p-2 h3 ms-5" style="color: #6D69FF !important;">0</div>
+                                            <div class="progress mt-3 mb-2">
+                                                <div class="progress-bar bg-secondary" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="d-inline p-2 me-5">Porcentagem
+                                            </div>
+                                            <div class="d-inline p-2 ms-5">0,00 %</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mt-4">
+                                <div class="col-sm-12">
+                                    <div class="card bg-dark text-white border-white rounded-0 ">
+                                        <div class="card-body text-start border-white justify-content-between"
+                                            style="background-color: #4B0082!important;">
+                                            <div class="d-inline p-2">
+                                                <h5 class="card-title">Total de vendas</h5>
+                                                Quantidade total de vendas feitas no cartão, pix e
+                                                boleto.
+                                            </div>
+                                            <div class="d-inline p-2 h3 ms-5">0
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
         </div>
+    </div>
     </div>
 
     </div>
     </main>
 
     <div class="container bg-white">
-<<<<<<< HEAD
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-=======
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top mx-5">
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
             <div class="col mb-3">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                     <p class="display-4" style="color: #6D69FF; font-weight:bold;">vaypp</p>
@@ -649,23 +1048,6 @@
                     </font>
                 </h5>
                 <ul class="nav flex-column text-dark">
-<<<<<<< HEAD
-                    <li class="nav-item mb-2"><a href="afiliadosAceitas.html" class="nav-link p-0 text-muted">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;" class="text-dark">Afiliados Aceitos</font>
-                        </font>
-                    </a></li>
-                    <li class="nav-item mb-2"><a href="afiliadosFiltros.html" class="nav-link p-0 text-muted">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;" class="text-dark">Afiliados Filtros</font>
-                        </font>
-                    </a></li>
-                    <li class="nav-item mb-2"><a href="cadastrodeprodutoConcluido.html" class="nav-link p-0 text-muted">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;" class="text-dark">Cadastro de Produto COncluido</font>
-                        </font>
-                    </a></li>
-=======
                     <li class="nav-item mb-2 text-dark"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
@@ -681,22 +1063,11 @@
                                 <font style="vertical-align: inherit;" class="text-dark">Pagamentos</font>
                             </font>
                         </a></li>
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
                     <li class="nav-item mb-2"><a href="centralAjuda.html" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Central de ajuda</font>
                             </font>
                         </a></li>
-<<<<<<< HEAD
-                        <li class="nav-item mb-2"><a href="cadastrodeprodutos.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="cadastrodeprodutosComissao.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Comissão</font>
-=======
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
@@ -705,7 +1076,6 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
                             </font>
                         </a></li>
                     <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-muted">
@@ -723,31 +1093,6 @@
                     </font>
                 </h5>
                 <ul class="nav flex-column">
-<<<<<<< HEAD
-                    <li class="nav-item mb-2"><a href="cadastrodeprodutosConteudo.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Conteudo</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="cadastrodeprodutoVenda.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Venda</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="churnRate.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Churn Rate</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="meuscertificados.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Certificados</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="semcertificados.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Sem certificados</font>
-=======
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
@@ -771,7 +1116,6 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
                             </font>
                         </a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
@@ -779,15 +1123,9 @@
                                 <font style="vertical-align: inherit;" class="text-dark">Meu perfil</font>
                             </font>
                         </a></li>
-<<<<<<< HEAD
-                    <li class="nav-item mb-2"><a href="relatorioChargeback.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Relatorio Chargeback</font>
-=======
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
                             </font>
                         </a></li>
                 </ul>
@@ -805,21 +1143,6 @@
                                 <font style="vertical-align: inherit;" class="text-dark">Sobre Nós</font>
                             </font>
                         </a></li>
-<<<<<<< HEAD
-                    <li class="nav-item mb-2"><a href="pagecurso.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Pagina de cursos</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="relatorioEstorno.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Relatorio de Estorno</font>
-                            </font>
-                        </a></li>
-                    <li class="nav-item mb-2"><a href="relatorioVendas.html" class="nav-link p-0 text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="text-dark">Relatorio de Vendas</font>
-=======
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Trabalhe com a gente</font>
@@ -833,7 +1156,6 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;" class="text-dark">Lorem Ipsum</font>
->>>>>>> 6f5b246bdc90f3af51f66c015f191f4e502aab5b
                             </font>
                         </a></li>
                     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
