@@ -7,13 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Afiliado - Loja</title>
+    <title>Meus certificados(sem certificados)</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
@@ -78,14 +78,9 @@
                         class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none w-20">
                         <nav class="navbar navbar-light">
                             <div class="container-fluid ">
-
-
                             </div>
                         </nav>
-
                     </a>
-
-
                     <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
                         style="background-color: #6D69FF !important;">
                         <li>
@@ -133,6 +128,11 @@
                                         </div>
                                         <div class="offcanvas-body">
                                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+
+
+
+
                                                 <li class="nav-item mb-2">
 
                                                     <a href="afiliado.html" class="text-decoration-none text-white">
@@ -510,145 +510,308 @@
                 </div>
             </nav>
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
-                <div class="card mt-4 bg-dark text-white p-5 border" style="border-color: #6D69FF !important;">
-                    <div class="d-flex align-items-center w-100" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" fill="currentColor"
-                            class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
-                            aria-label="Warning:" style="color: #6D69FF;">
-                            <path
-                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                        </svg>
-                        <div class="h-100">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-
-
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
                     </div>
-
-                    <div class="form-check mt-4 ms-3">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Lorem ipsum dolor sit amet.
-                        </label>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
                     </div>
-                    <button type="button" class="btn btn-sm mt-3 w-25 py-2 mx-3 my-3 text-white border-0"
-                        style="background-color: #6D69FF;">LOREM IPSUM</button>
                 </div>
-
                 <div class="hstack gap-3 mt-5">
                     <div class="bg-dark">
-                        <a href="/" class="d-flex align-items-center mb-4 mb-lg-0 text-white text-decoration-none">
+                        <a href="/" class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none">
                             <div
                                 style="background-color: #6D69FF; width: 10px; color:#6D69FF; border-radius: 5px; margin-right:5px;">
                                 a
                             </div>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;" class="h3 ms-1">Dashboard</font>
+                                <font style="vertical-align: inherit;" class="h3 ms-1">Meus Certificados</font>
                             </font>
 
                         </a>
                     </div>
-
                 </div>
 
-                <div class=" rounded text-center mt-2 col-md-12 col-sm-12 mb-5">
-                    <div class=" rounded text-center border" style="border-color: #6D69FF !important;">
+                <h1 class="text-white mt-5">Certificados gerados</h1>
 
-
-                        <div class="row ms-3 mt-4 me-3 mb-3">
-                            <div class="col-sm-9">
-                                <p class="text-start text-white h3">Suas comissões</p>
-                            </div>
-                            <div class="col-sm-3 mb-1 border-secondary bg-dark">
-                                <select class="form-select bg-dark text-white-50" aria-label="Default select example"
-                                    aria-placeholder="Período">
-                                    <option selected>Período</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="card bg-dark border-0 text-start ms-3">
-                            <div class="card-header text-start h1 border-0" style="color: #6D69FF;">
-                                R$ 0,00
-                            </div>
-                            <p class="text-white ms-3 h6 mt-2">Total de comissões</p>
-                            <hr style="color: gray;" class="mx-3">
-                            <p class="text-white ms-3 fs-4 mb-1">Resumo das comissões</p>
-                            <hr style="color: gray;" class="mx-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <div
-                                            class="card bg-dark border-secondary border-top-0 border-bottom-0 border-start-0 rounded-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Total deste mês</h5>
-                                                <p class="card-text h2" style="color:#6D69FF ;">R$ 0,00</p>
-                                                <p class="card-text text-white-50 fs-5">Mês passado - R$ 0,00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div
-                                            class="card bg-dark border-secondary border-top-0 border-bottom-0 border-start-0 rounded-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Vendas de hoje</h5>
-                                                <p class="card-text h2" style="color:#FD8A04 ;">R$ 0,00</p>
-                                                <p class="card-text text-white-50 fs-5">Ontem - R$ 0,00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div
-                                            class="card bg-dark border-secondary border-top-0 border-bottom-0 border-start-0 rounded-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Saldo disponível</h5>
-                                                <p class="card-text h2" style="color:#54A106 ;">R$ 0,00</p>
-                                                <p class="card-text text-white-50 fs-5">Disponível para saque</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div
-                                            class="card bg-dark border-secondary border-top-0 border-bottom-0 border-start-0 rounded-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title">A Receber</h5>
-                                                <p class="card-text h2" style="color:#FDC501 ;">R$ 0,00</p>
-                                                <p class="card-text text-white-50 fs-5">Vendas pendentes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <!-- <canvas class="my-4 w-100 chartjs-render-monitor bg-white" id="myChart" width="1238" height="522"
-                                style="display: block; width: 1238px; height: 522px;"></canvas> -->
-                        </div>
-
-                    </div>
-
-                    <div class="container border rounded mt-5 text-center text-white"
-                        style="border-color: #6D69FF !important;">
-                        <p class="mt-5 h4 mb-4">Previsão de recebimento (Próximos 30 dias)</p>
-
-                        <canvas id="myChart" width="8" height="2"></canvas>
-                    </div>
-
+                <div class="mt-5 mb-5">
+                    <img src="img/Frame.png" class="img-fluid mx-auto d-block" alt="Imagem responsiva">
+                    <h2 class="text-white mt-5 text-center">Todos os seus certificados aparecerão aqui...</h2>
+                    <h4 class="text-white text-center"><small>Aqui você poderá consultar e baixar todos os seus certificados.</small></h4>
                 </div>
+
         </div>
-    </div>
 
     </div>
 
+
+    <!-- <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1948" height="822" -->
+    <!-- style="display: block; width: 974px; height: 411px;"></canvas> -->
+
+
+    </main>
+    </div>
+    </div>
+    <!-- <div class="row align-items-md-stretch bg-dark">
+        <div class="col-md-2 col-sm-12" style="border-color: #6D69FF;">
+
+            <main style="background-color: #000000;" class="col-sm-12">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100 border-end"
+                    style="width: 280px;">
+                    <div class="dropdown">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            style="color: #6D69FF;" class="bi bi-caret-left-fill ms-2" viewBox="0 0 16 16">
+                            <path
+                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                        </svg>
+                        <strong>
+                            <font style="vertical-align: inherit;" class="ms-3">
+                                <font style="vertical-align: inherit;">Olá, Gabriel</font>
+                            </font>
+                        </strong>
+
+                        <div style="color: #6D69FF;" class="ms-5">Meu perfil</div>
+
+                    </div>
+                    <hr>
+
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Dashboard
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="afiliadoLoja.html" class="nav-link text-white" aria-current="page"
+                                style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Loja
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Casa
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Produtos
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Afiliados
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Relatórios
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Banco Virtual
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#" class="nav-link text-white" aria-current="page" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-boxes" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                </svg>
+                                <font style="vertical-align: inherit;" class="ms-3 me-5">
+                                    <font style="vertical-align: inherit;">
+                                        Ferramentas
+                                    </font>
+                                </font>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+
+
+                </div>
+
+
+        </div>
+        <div class="col-md-10">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+                <div class="col">
+                    <div class="alert border border" style="border-color: #6D69FF  !important;">
+                        <div class="d-flex align-items-center w-100" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" fill="currentColor"
+                                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16"
+                                role="img" aria-label="Warning:" style="color: #6D69FF;">
+                                <path
+                                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <div class="h-100">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-check mt-4 ms-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Lorem ipsum dolor sit amet.
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-sm mt-3 w-25 py-2 mx-3 my-3 text-white border-0"
+                            style="background-color: #6D69FF;">LOREM IPSUM</button>
+                    </div>
+
+
+                    <header class="p-3">
+                        <div class="container">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                                <a href="/"
+                                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                                    <div
+                                        style="background-color: #6D69FF; width: 10px; color:#6D69FF; border-radius: 5px; margin-right:5px;">
+                                        a
+                                    </div>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Original</font>
+                                    </font>
+                                </a>
+
+                                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                                    <li><a href="#" class="nav-link px-2 text-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">|</font>
+                                            </font>
+                                        </a></li>
+                                    <li><a href="#" class="nav-link px-2 text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-house-fill mb-1" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                            </svg>
+                                            <font style="vertical-align: inherit;" class="ms-1">
+                                                <font style="vertical-align: inherit;">Todos</font>
+                                            </font>
+                                        </a></li>
+                                    <li><a href="#" class="nav-link px-2 text-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">|</font>
+                                            </font>
+                                        </a></li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2" style="color:#FDC501;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                style="color: #FDC501 ;" fill="currentColor"
+                                                class="bi bi-star-fill mb-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <font style="vertical-align: inherit;" class="ms-1">
+                                                <font style="vertical-align: inherit;">
+                                                    Recentes
+                                                </font>
+                                            </font>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+
+
+                </div>
+                
+    </div> -->
     <div class="container bg-white">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
             <div class="col mb-3">
@@ -817,67 +980,8 @@
 
         </footer>
     </div>
-    <script>
-        const labels = [
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-            '01.11.2022',
-        ];
-
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'valor',
-                maintainAspectRatio: true,
-                backgroundColor: '#6D69FF',
-                borderColor: '#6D69FF',
-                data: [0, 0.1, 0.2, 0.4, 0.6, 0.8, 0.9, 1.0],
-            }]
-        };
-
-        const config = {
-            type: 'line',
-            data: data,
-            options: {}
-        };
-    </script>
-
-    <script>
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-    </script>
 
     </div>
 </body>
-
 
 </html>
