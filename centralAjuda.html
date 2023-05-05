@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Central de Ajuda</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <link type="text/css" rel="stylesheet" charset="UTF-8"
+        href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+</head>
+
+<body _c_t_common="1" _c_t_j1="1">
+
+    <header>
+        <div class="px-3 py-1 text-bg-dark">
+
+            <div class="container">
+
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="home.html"
+                        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                        <h1 style="color:#6D69FF; font-weight:bold;" class="ms-5">vaypp</h1>
+                    </a>
+                    <a href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none w-20">
+                        <nav class="navbar navbar-light bg-dark">
+                            <div class="container-fluid ">
+
+
+                            </div>
+                        </nav>
+
+                    </a>
+
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                        <li>
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle mt-2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="mdo" width="35" height="35"
+                                    class="rounded-circle">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <nav class="navbar navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                        style="background-color: #6D69FF;">
+                                        <span class="navbar-toggler-icon" style="color: #fff;"></span>
+                                    </button>
+                                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
+                                        id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu
+                                            </h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Lorem
+                                                        Ipsum</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Lorem
+                                                        Ipsum</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Lorem
+                                                        Ipsum</a>
+                                                </li>
+                                                <li class="nav-item mb-2">
+
+                                                    <a href="#" class="text-decoration-none text-white">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-hand-index-thumb-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z" />
+                                                        </svg>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;" class="ms-2">
+                                                                Explorar
+                                                            </font>
+                                                        </font>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item mb-2 me-3">
+                                                    <a href="meuscursos.html" class="text-decoration-none text-white">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-pencil-fill me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                            </path>
+                                                        </svg>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">
+                                                                Meus cursos
+                                                            </font>
+                                                        </font>
+                                                    </a>
+
+
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="meusdados.html" class="text-decoration-none text-white">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-file-person-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                                                        </svg>
+                                                        <font style="vertical-align: inherit;" class="ms-2">
+                                                            <font style=" vertical-align: inherit;">
+                                                                Meus dados
+                                                            </font>
+                                                        </font>
+                                                    </a>
+
+
+                                                </li>
+                                                <hr style="color: gray;">
+                                                <li class="nav-item mt-2">
+                                                    <a href="index.html" class="text-decoration-none text-white">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-box-arrow-right"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                                        </svg>
+                                                        <font style="vertical-align: inherit;" class="ms-2">
+                                                            <font style=" vertical-align: inherit;">
+                                                                Sair
+                                                            </font>
+                                                        </font>
+                                                    </a>
+
+
+                                                </li>
+
+
+                                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lorem
+                                    Ipsum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Lorem Ipsum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Lorem Ipsum</a>
+                            </li>
+                            <li class="nav-item mb-2">
+
+                                <a href="#" class="text-decoration-none text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z" />
+                                    </svg>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;" class="ms-2">
+                                            Explorar
+                                        </font>
+                                    </font>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mb-2 me-3">
+                                <a href="meuscursos.html" class="text-decoration-none text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pencil-fill me-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                        </path>
+                                    </svg>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">
+                                            Meus cursos
+                                        </font>
+                                    </font>
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="meusdados.html" class="text-decoration-none text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                                    </svg>
+                                    <font style="vertical-align: inherit;" class="ms-2">
+                                        <font style=" vertical-align: inherit;">
+                                            Meus dados
+                                        </font>
+                                    </font>
+                                </a>
+
+
+                            </li>
+                            <hr style="color:gray;">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Sair
+                                    </font>
+                                </font>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Dropdown
+                                              </a>
+                                              <ul class="dropdown-menu dropdown-menu-dark">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li>
+                                                      <hr class="dropdown-divider">
+                                                  </li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a>
+                                                  </li>
+                                              </ul>
+                                          </li> -->
+                        </ul>
+                        <!-- <form class="d-flex mt-3" role="search">
+                                          <input class="form-control me-2" type="search" placeholder="Search"
+                                              aria-label="Search">
+                                          <button class="btn btn-success" type="submit">Search</button>
+                                      </form> -->
+                    </div>
+                </div>
+            </div>
+            </nav>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        <!-- <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                    <input type="search" class="form-control" placeholder="Procurar..." aria-label="Procurar">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-light text-dark me-2">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Conecte-se</font>
+                        </font>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Inscrever-se</font>
+                        </font>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <main style="background-color: #000000;">
+        <div class="album py-5" style="background-color: #000000;">
+            <div class="container overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col">
+                        <a href="/" class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none ms-5">
+                            <div
+                                style="background-color: #6D69FF; width: 10px; color:#6D69FF; border-radius: 5px; margin-right:5px;">
+                                a
+                            </div>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="h3">Central de Ajuda</font>
+                            </font>
+
+
+                        </a>
+                        <a href="/"
+                            class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none ms-5 mt-4">
+
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="fw-bold h3"> Olá, como podemos
+                                    ajudar você?
+                                </font>
+                            </font>
+
+
+                        </a>
+                        <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
+                            <div class="col-sm-3 mt-4">
+                                <div class="card bg-dark" style="border-color:#6D69FF;">
+                                    <div class="text-center">
+                                        <div class="position-absolute top-0 start-50 translate-middle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADdCAMAAACc/C7aAAAAaVBMVEXDw8MAAADGxsaXl5fJycnMzMxSUlKRkZF1dXV5eXnCwsIFBQWlpaV+fn66urqurq5dXV1sbGxMTEyKiopXV1czMzOcnJwaGhqoqKiEhIQlJSUrKysODg5mZmZHR0ezs7M7OzsVFRU5OTmFwHepAAAC+klEQVR4nO3bi1KjMBSAYXIarIbea2uttVXf/yE36Q0qobrITHP0/2Z2Zt2xDP+GQEDMMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQ56dCtY+JcZge9zgzsrXvipGc61EtzLO29KbpKLMx9mkPpI83H410XFiblyGFufy7Ph0lHPnSya/aByFuqRv7sSqchUvwV83k4EHFtt6QhcrwOl4GXZdv9VBApq3CdK/w1c9nykNUQ+XK6pG/abin5SFmWy5Z+u6FMP7K6unttt6cKIqflSE4a9tQd/zRtKflI6ZeRw6Y9deFS2ryl5COzUXkzMWoIcZm45bixUkGkfd6PormyyBMZPxkzaVouKIjM7PAwjtPm/XRP4Rse8/hgaoh0djzdbl9XeePJxc7CUBdmHi/REOkPx3Bb2DTlnOwP6L34vNQReZ3szqffRXRa/oJIcetzpJnksS2pj3T5pPrIqmfr6wL9kbZvynWf/8uuPi21Rzrxa4WijCzMW/0j6iKdV/lSZPH5Ges0V3+4flqi+uV77Ql07QmCtkg7GlcumM4uI0/ZC+UjGe67FpVl+qhWGGw/f0pRpIS99aeWjTtV2rdopBleTktNkZkMwvmzMHf20BCaY42FWV3MXFWR2eZY8ezvpY/N8aF8UhuZz84jtV+Iu/d4YfiGu+oHFUX6e43i1LDODs1FfCT9P8+lXN7piZRxNWOS23nTOB7syvsRPZHZ+qKhv2uckMfBLqelmsjLew1/anlpOlbLwT5vSUeks/2rQVG9U5eSyLC0+f+3JE53XToiRT6+OjhjPjRFunz6dVHM9DAtVURG7zW+ZbAfSw2R0mpCHvi1vFMRabctC/1/zdaKisjTTwnaRIYfhCmIdHbQunF/Rl5J8pEizfca37Pxkzr5yNnXHdfNJPGRHNrRvP9D81HqkbnNO5D2W5K//X1XFyK7kuyby3/iHXTp8rcJVmk2/onfCwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALi1f4DsKck70eEzAAAAAElFTkSuQmCC"
+                                                class="rounded" alt="..." style="width:6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt-5 mb-3">
+                                        <p class="card-text text-white-50">Compreiii pela Vaypp e preciso de ajuda</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3 mt-4">
+                                <div class="card bg-dark" style="border-color:#6D69FF;">
+                                    <div class="text-center">
+                                        <div class="position-absolute top-0 start-50 translate-middle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADdCAMAAACc/C7aAAAAaVBMVEXDw8MAAADGxsaXl5fJycnMzMxSUlKRkZF1dXV5eXnCwsIFBQWlpaV+fn66urqurq5dXV1sbGxMTEyKiopXV1czMzOcnJwaGhqoqKiEhIQlJSUrKysODg5mZmZHR0ezs7M7OzsVFRU5OTmFwHepAAAC+klEQVR4nO3bi1KjMBSAYXIarIbea2uttVXf/yE36Q0qobrITHP0/2Z2Zt2xDP+GQEDMMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQ56dCtY+JcZge9zgzsrXvipGc61EtzLO29KbpKLMx9mkPpI83H410XFiblyGFufy7Ph0lHPnSya/aByFuqRv7sSqchUvwV83k4EHFtt6QhcrwOl4GXZdv9VBApq3CdK/w1c9nykNUQ+XK6pG/abin5SFmWy5Z+u6FMP7K6unttt6cKIqflSE4a9tQd/zRtKflI6ZeRw6Y9deFS2ryl5COzUXkzMWoIcZm45bixUkGkfd6PormyyBMZPxkzaVouKIjM7PAwjtPm/XRP4Rse8/hgaoh0djzdbl9XeePJxc7CUBdmHi/REOkPx3Bb2DTlnOwP6L34vNQReZ3szqffRXRa/oJIcetzpJnksS2pj3T5pPrIqmfr6wL9kbZvynWf/8uuPi21Rzrxa4WijCzMW/0j6iKdV/lSZPH5Ges0V3+4flqi+uV77Ql07QmCtkg7GlcumM4uI0/ZC+UjGe67FpVl+qhWGGw/f0pRpIS99aeWjTtV2rdopBleTktNkZkMwvmzMHf20BCaY42FWV3MXFWR2eZY8ezvpY/N8aF8UhuZz84jtV+Iu/d4YfiGu+oHFUX6e43i1LDODs1FfCT9P8+lXN7piZRxNWOS23nTOB7syvsRPZHZ+qKhv2uckMfBLqelmsjLew1/anlpOlbLwT5vSUeks/2rQVG9U5eSyLC0+f+3JE53XToiRT6+OjhjPjRFunz6dVHM9DAtVURG7zW+ZbAfSw2R0mpCHvi1vFMRabctC/1/zdaKisjTTwnaRIYfhCmIdHbQunF/Rl5J8pEizfca37Pxkzr5yNnXHdfNJPGRHNrRvP9D81HqkbnNO5D2W5K//X1XFyK7kuyby3/iHXTp8rcJVmk2/onfCwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALi1f4DsKck70eEzAAAAAElFTkSuQmCC"
+                                                class="rounded" alt="..." style="width:6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt-5 mb-3">
+                                        <p class="card-text text-white-50">Estou aprendendo a usar a Vaypp e preciso
+                                            de
+                                            ajuda</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 mt-4">
+                                <div class="card bg-dark h-100" style="border-color:#6D69FF;">
+                                    <div class="text-center">
+                                        <div class="position-absolute top-25 start-50 translate-middle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADdCAMAAACc/C7aAAAAaVBMVEXDw8MAAADGxsaXl5fJycnMzMxSUlKRkZF1dXV5eXnCwsIFBQWlpaV+fn66urqurq5dXV1sbGxMTEyKiopXV1czMzOcnJwaGhqoqKiEhIQlJSUrKysODg5mZmZHR0ezs7M7OzsVFRU5OTmFwHepAAAC+klEQVR4nO3bi1KjMBSAYXIarIbea2uttVXf/yE36Q0qobrITHP0/2Z2Zt2xDP+GQEDMMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQ56dCtY+JcZge9zgzsrXvipGc61EtzLO29KbpKLMx9mkPpI83H410XFiblyGFufy7Ph0lHPnSya/aByFuqRv7sSqchUvwV83k4EHFtt6QhcrwOl4GXZdv9VBApq3CdK/w1c9nykNUQ+XK6pG/abin5SFmWy5Z+u6FMP7K6unttt6cKIqflSE4a9tQd/zRtKflI6ZeRw6Y9deFS2ryl5COzUXkzMWoIcZm45bixUkGkfd6PormyyBMZPxkzaVouKIjM7PAwjtPm/XRP4Rse8/hgaoh0djzdbl9XeePJxc7CUBdmHi/REOkPx3Bb2DTlnOwP6L34vNQReZ3szqffRXRa/oJIcetzpJnksS2pj3T5pPrIqmfr6wL9kbZvynWf/8uuPi21Rzrxa4WijCzMW/0j6iKdV/lSZPH5Ges0V3+4flqi+uV77Ql07QmCtkg7GlcumM4uI0/ZC+UjGe67FpVl+qhWGGw/f0pRpIS99aeWjTtV2rdopBleTktNkZkMwvmzMHf20BCaY42FWV3MXFWR2eZY8ezvpY/N8aF8UhuZz84jtV+Iu/d4YfiGu+oHFUX6e43i1LDODs1FfCT9P8+lXN7piZRxNWOS23nTOB7syvsRPZHZ+qKhv2uckMfBLqelmsjLew1/anlpOlbLwT5vSUeks/2rQVG9U5eSyLC0+f+3JE53XToiRT6+OjhjPjRFunz6dVHM9DAtVURG7zW+ZbAfSw2R0mpCHvi1vFMRabctC/1/zdaKisjTTwnaRIYfhCmIdHbQunF/Rl5J8pEizfca37Pxkzr5yNnXHdfNJPGRHNrRvP9D81HqkbnNO5D2W5K//X1XFyK7kuyby3/iHXTp8rcJVmk2/onfCwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALi1f4DsKck70eEzAAAAAElFTkSuQmCC"
+                                                class="rounded" alt="..." style="width:6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt-5 mb-4">
+                                        <p class="card-text text-white-50">Vendi pela Vaypp e preciso de ajuda</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mt-4">
+                                <div class="card bg-dark h-100" style="border-color:#6D69FF;">
+                                    <div class="text-center">
+                                        <div class="position-absolute top-0 start-50 translate-middle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADdCAMAAACc/C7aAAAAaVBMVEXDw8MAAADGxsaXl5fJycnMzMxSUlKRkZF1dXV5eXnCwsIFBQWlpaV+fn66urqurq5dXV1sbGxMTEyKiopXV1czMzOcnJwaGhqoqKiEhIQlJSUrKysODg5mZmZHR0ezs7M7OzsVFRU5OTmFwHepAAAC+klEQVR4nO3bi1KjMBSAYXIarIbea2uttVXf/yE36Q0qobrITHP0/2Z2Zt2xDP+GQEDMMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQ56dCtY+JcZge9zgzsrXvipGc61EtzLO29KbpKLMx9mkPpI83H410XFiblyGFufy7Ph0lHPnSya/aByFuqRv7sSqchUvwV83k4EHFtt6QhcrwOl4GXZdv9VBApq3CdK/w1c9nykNUQ+XK6pG/abin5SFmWy5Z+u6FMP7K6unttt6cKIqflSE4a9tQd/zRtKflI6ZeRw6Y9deFS2ryl5COzUXkzMWoIcZm45bixUkGkfd6PormyyBMZPxkzaVouKIjM7PAwjtPm/XRP4Rse8/hgaoh0djzdbl9XeePJxc7CUBdmHi/REOkPx3Bb2DTlnOwP6L34vNQReZ3szqffRXRa/oJIcetzpJnksS2pj3T5pPrIqmfr6wL9kbZvynWf/8uuPi21Rzrxa4WijCzMW/0j6iKdV/lSZPH5Ges0V3+4flqi+uV77Ql07QmCtkg7GlcumM4uI0/ZC+UjGe67FpVl+qhWGGw/f0pRpIS99aeWjTtV2rdopBleTktNkZkMwvmzMHf20BCaY42FWV3MXFWR2eZY8ezvpY/N8aF8UhuZz84jtV+Iu/d4YfiGu+oHFUX6e43i1LDODs1FfCT9P8+lXN7piZRxNWOS23nTOB7syvsRPZHZ+qKhv2uckMfBLqelmsjLew1/anlpOlbLwT5vSUeks/2rQVG9U5eSyLC0+f+3JE53XToiRT6+OjhjPjRFunz6dVHM9DAtVURG7zW+ZbAfSw2R0mpCHvi1vFMRabctC/1/zdaKisjTTwnaRIYfhCmIdHbQunF/Rl5J8pEizfca37Pxkzr5yNnXHdfNJPGRHNrRvP9D81HqkbnNO5D2W5K//X1XFyK7kuyby3/iHXTp8rcJVmk2/onfCwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALi1f4DsKck70eEzAAAAAElFTkSuQmCC"
+                                                class="rounded" alt="..." style="width:6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt-5">
+                                        <p class="card-text text-white-50">Preciso de ajuda com a minha conta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mt-5 bg-dark border-secondary text-start text-white p-3">
+
+                            <div class="hstack gap-3">
+                                <div class="ms-4">Quer receber ajuda personalizada? Nos envie uma mensagem.</div>
+                                <button type="button" class="btn ms-auto text-white"
+                                    style="background-color: #6D69FF;">Entrar em
+                                    contato</button>
+                            </div>
+                        </div>
+
+                        <a href="/"
+                            class="d-flex align-items-center mb-5 mb-lg-0 text-white text-decoration-none ms-5 mt-4">
+
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="fw-bold h5"> Talvez a sua dúvida pode
+                                    estar aqui
+                                </font>
+                            </font>
+
+
+                        </a>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card bg-dark border-secondary p-2">
+                                    <div class="card-body">
+                                        <h5 class="card-text text-start text-white mb-3">Sua compra</h5>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark border-secondary p-2">
+                                    <div class="card-body">
+                                        <h5 class="card-text text-start text-white mb-3">Cancelamento e Reembolso</h5>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark border-secondary p-2">
+                                    <div class="card-body">
+                                        <h5 class="card-text text-start text-white mb-3 b ">Conta e Cadastro</h5>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                        <p class="card-text text-white text-start ms-4">Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card w-75 bg-transparent text-start py-5 ">
+                            <div class="card-body text-white">
+                                <h5 class="card-title fw-bold h3 mb-3">Precisa falar com a gente?</h5>
+                                <p class="card-text fw-semibold h5 mb-3">Se nossos artigos não te ajudaram, entre em
+                                    contato
+                                    e
+                                    vamos
+                                    responder assim que possível</p>
+                                <a href="contato.html" class="btn border-0 text-white px-4 py-2 mt-3"
+                                    style="background-color: #6D69FF;">Entrar em
+                                    contato</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <div class="container bg-white">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <p class="display-4" style="color: #6D69FF; font-weight:bold;">vaypp</p>
+
+                </a>
+                <p class="text-muted">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">© 2022</font>
+                    </font>
+                </p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="fw-bold">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Soluções</font>
+                    </font>
+                </h5>
+                <ul class="nav flex-column text-dark">
+                    <li class="nav-item mb-2"><a href="afiliadosAceitas.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Afiliados Aceitos</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="afiliadosFiltros.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Afiliados Filtros</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="cadastrodeprodutoConcluido.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de Produto COncluido
+                                </font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="centralAjuda.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Central de ajuda</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="cadastrodeprodutos.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="cadastrodeprodutosComissao.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Comissão
+                                </font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Contato</font>
+                            </font>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="fw-bold">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Educação</font>
+                    </font>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="cadastrodeprodutosConteudo.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Conteudo
+                                </font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="cadastrodeprodutoVenda.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Cadastro de produtos Venda
+                                </font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="churnRate.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Churn Rate</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="meuscertificados.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Certificados</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="semcertificados.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Sem certificados</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Meu perfil</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="relatorioChargeback.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Relatorio Chargeback</font>
+                            </font>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="fw-bold">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Vaypp</font>
+                    </font>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Sobre Nós</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="pagecurso.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Pagina de cursos</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="relatorioEstorno.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Relatorio de Estorno</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="relatorioVendas.html" class="nav-link p-0 text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;" class="text-dark">Relatorio de Vendas</font>
+                            </font>
+                        </a></li>
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" fill="currentColor" class="bi bi-facebook"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg></a></li>
+                            <li class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" fill="currentColor" class="bi bi-twitter"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" fill="currentColor" class="bi bi-youtube"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </ul>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+        </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
